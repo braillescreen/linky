@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linky"
+version = "2025.09.1"
+description = "Opens the last spoken link with a hotkey."
+authors = [{name = "BrailleScreen"}]
+readme = "addon/doc/en/readme.md"
+requires-python = ">=3.8"
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "pandoc>=2.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["addon"]
+
+[tool.setuptools.package-data]
+"*" = ["*.ini", "*.html", "*.md"]

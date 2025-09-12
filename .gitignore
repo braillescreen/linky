@@ -1,0 +1,38 @@
+# Build outputs
+*.nvda-addon
+*.html
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated files
+addon/manifest.ini
+addon/doc/
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Egg info
+*.egg-info/
+
+# UV cache
+.uv-cache/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
