@@ -1,4 +1,4 @@
-name: Build and Release NVDA Addon
+name: Build and Release
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
       run: |
         $addonFile = Get-ChildItem -Name "*.nvda-addon" | Select-Object -First 1
         echo "filename=$addonFile" >> $env:GITHUB_OUTPUT
-        echo "Found addon file: $addonFile"
+        echo "$addonFile"
     
     - name: Create Release
       if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
